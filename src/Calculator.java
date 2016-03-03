@@ -1,3 +1,5 @@
+package src;
+
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -70,6 +72,7 @@ public class Calculator {
 		frame.getContentPane().add(label_1);
 		
 		JButton Calc = new JButton("=");
+		Calc.setBounds(305, 56, 93, 70);
 		Calc.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				double a,b;
@@ -98,7 +101,6 @@ public class Calculator {
 				
 			}
 		});
-		Calc.setBounds(305, 56, 93, 70);
 		frame.getContentPane().add(Calc);
 		
 		
@@ -106,6 +108,19 @@ public class Calculator {
 		result.setBounds(249, 25, 98, 20);
 		frame.getContentPane().add(result);
 		
+		JButton ButtonPlus = new JButton("+");
+		ButtonPlus.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				operat = 0;
+				operation.setText("+");
+			}
+		});
+		ButtonPlus.setBounds(22, 69, 115, 20);
+		frame.getContentPane().add(ButtonPlus);
+		
+		
+		
+	
 		
 	}
 }
