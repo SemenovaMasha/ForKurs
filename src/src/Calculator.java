@@ -1,6 +1,4 @@
 package src;
-
-
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -117,6 +115,16 @@ public class Calculator {
 		});
 		ButtonPlus.setBounds(22, 69, 115, 20);
 		frame.getContentPane().add(ButtonPlus);
+		
+		JButton button = new JButton("-");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				operat = 1;
+				operation.setText("-");
+			}
+		});
+		button.setBounds(25, 101, 117, 29);
+		frame.getContentPane().add(button);
 		
 		
 		
