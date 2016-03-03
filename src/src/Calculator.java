@@ -126,6 +126,16 @@ public class Calculator {
 		button.setBounds(25, 101, 117, 29);
 		frame.getContentPane().add(button);
 		
+		JButton button_1 = new JButton("/");
+		button_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				operat = 3;
+				operation.setText("/");
+			}
+		});
+		button_1.setBounds(20, 142, 117, 29);
+		frame.getContentPane().add(button_1);
+		
 		
 		
 	
