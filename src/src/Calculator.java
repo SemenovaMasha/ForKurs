@@ -128,7 +128,7 @@ public class Calculator {
 		Button3.setBounds(22, 150, 115, 20);
 		frame.getContentPane().add(Button3);
 	
-		
+	//типа изменила , новая строка и тд 
 		
 		
 	}
