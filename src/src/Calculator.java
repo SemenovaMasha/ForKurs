@@ -7,9 +7,6 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-
-
-
 public class Calculator {
 
 	private JFrame frame;
@@ -35,16 +32,10 @@ public class Calculator {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public Calculator() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
@@ -127,8 +118,18 @@ public class Calculator {
 		frame.getContentPane().add(button);
 		
 		
-		
+		JButton Button3 = new JButton("*");
+		Button3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				operat = 2;
+				operation.setText("*");
+			}
+		});
+		Button3.setBounds(22, 150, 115, 20);
+		frame.getContentPane().add(Button3);
 	
+		
+		
 		
 	}
 }
